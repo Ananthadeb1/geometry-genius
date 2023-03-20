@@ -34,14 +34,14 @@
                                 <p>Area (A) = 0.5 x b x h</p>
                                 <div class="d-flex m-auto justify-content-center">
                                     <div  class="d-flex me-3">
-                                        <input type="text" name="" id="" placeholder="b" style="display: inline; width: 100px; margin-right: 5px;"> <p style="display: inline;">cm</p>
+                                        <input id="triB" type="text" name="" id="" placeholder="b" style="display: inline; width: 100px; margin-right: 5px;"> <p style="display: inline;">cm</p>
                                     </div>
                                     <div  class="d-flex">
-                                        <input type="text" name="" id="" placeholder="h" style="display: inline; width: 100px; margin-right: 5px;"> <p style="display: inline;">cm</p>
+                                        <input type="text" name="" id="trih" placeholder="h" style="display: inline; width: 100px; margin-right: 5px;"> <p style="display: inline;">cm</p>
                                     </div>
                                 </div>
                                 <div >
-                                    <h2 class="btn btn-primary mt-3 px-5">Calculate</h2>
+                                    <h2 id="triClc" class="btn btn-primary mt-3 px-5 calcuateResult">Calculate</h2>
                                 </div>
                               </div>
                             </div>  
@@ -49,7 +49,7 @@
                         </div>
                         <div class="col">
                           <div class="card h-100">
-                            <img src="./images/rectangle.png" class="card-img-top p-5" alt="...">
+                            <img src="./images/rectangle.png" class="card-img-top p-5 calcuateResult" alt="...">
                             <div class="card-body text-center">
                               <h5 class="card-title">Rectangle</h5>
                               <div class="card-text">
@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                                 <div >
-                                    <h2 class="btn btn-primary mt-3 px-5">Calculate</h2>
+                                    <h2 id="recClc" class="btn btn-primary mt-3 px-5 calcuateResult">Calculate</h2>
                                 </div>
                               </div>
                             </div>
@@ -78,7 +78,7 @@
                                 <p>Area (A) = b x h</p>
                                 <p>b=10cm, h=12cm</p>
                                 <div >
-                                    <h2 class="btn btn-primary mt-3 px-5">Calculate</h2>
+                                    <h2 id="ParaClc" class="btn btn-primary mt-3 px-5 calcuateResult">Calculate</h2>
                                 </div>
                               </div>
                             </div>
@@ -98,7 +98,7 @@
                                   <p>Area (A) = 0.5 x d1 x d2</p>
                                   <p>d1 = 16cm, d2 = 8cm</p>
                                   <div >
-                                      <h2 class="btn btn-primary mt-3 px-5">Calculate</h2>
+                                      <h2 id="rombClc" class="btn btn-primary mt-3 px-5 calcuateResult">Calculate</h2>
                                   </div>
                                 </div>
                               </div>
@@ -113,7 +113,7 @@
                                   <p>Area (A) = 0.5 x p x b </p>
                                   <p>p = 6cm, b = 10cm</p>
                                   <div >
-                                      <h2 class="btn btn-primary mt-3 px-5">Calculate</h2>
+                                      <h2 id="pentClc" class="btn btn-primary mt-3 px-5 calcuateResult">Calculate</h2>
                                   </div>
                                 </div>
                               </div>
@@ -128,7 +128,7 @@
                                   <p>Area (A) = 𝞹 ab</p>
                                   <p>a = 10cm, b = 4cm</p>
                                   <div >
-                                      <h2 class="btn btn-primary mt-3 px-5">Calculate</h2>
+                                      <h2 id="ElepClc" class="btn btn-primary mt-3 px-5 calcuateResult">Calculate</h2>
                                   </div>
                                 </div>
                               </div>
@@ -144,15 +144,16 @@
                     <div class="card h-100">
                       <div class="card-body ">
                         <h5 class="card-title text-center" style="text-decoration: underline;">Area Calculation</h5>
-                        <div>
-                            <!-- dainamic li tag  -->
-                        </div>
+                            <ol id="results">
+
+                            </ol>
                       </div>
                     </div>
                   </div>
             </div>
         </section>
     </main>
+    <script src="./js/utility.js"></script>
     <script src="./js/calculation.js"></script>
 </body>
 </html>
