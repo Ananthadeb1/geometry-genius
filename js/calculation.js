@@ -3,9 +3,9 @@ document.getElementById("blogBtn").addEventListener ('click',function(){
 } )
 
 
-document.getElementById("triB").addEventListener("click",function(){
-    getValue("triB");
-})
+// document.getElementById("triB").addEventListener("click",function(){
+//     getValue("triB");
+// })
 
 // document.getElementById("triClc").addEventListener('click',function(){
 //     calculateValue("triClc");
@@ -14,14 +14,9 @@ document.getElementById("triB").addEventListener("click",function(){
 const clcBtn = document.getElementsByClassName("calcuateResult");
 for(const clc of clcBtn){
     clc.addEventListener('click',function( event){
-            let id;
-        document.querySelectorAll('h2').forEach(e => {
-            id = e.getAttribute('id');
-            e.addEventListener('click', function() {
-              console.log('A button with ID ' + id + ' was clicked!') 
-            } );
-          });
-
+        let id;
+            id = event.target.id;
+       console.log(id);
     const result = calculateValue(id);
         console.log("lol")
        const restultContainer = document.getElementById("results");

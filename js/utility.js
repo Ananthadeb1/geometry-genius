@@ -4,7 +4,7 @@ function getValue(elemetnId){
 }
 function calculateValue(elementId){
     if(elementId === "triClc"){
-       return 0.5 * getValue(id) * getValue()
+       return  0.5 * getValue("triB") * getValue("triH")
     }
 }
 
