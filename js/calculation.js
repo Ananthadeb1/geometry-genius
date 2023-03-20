@@ -21,7 +21,7 @@ for(const clc of clcBtn){
         console.log("lol")
        const restultContainer = document.getElementById("results");
         const li = document.createElement('li');
-        li.innerText= result;
+        li.innerText= result.toFixed(2);
         li.classList.add("result");
         restultContainer.appendChild(li);
     })
